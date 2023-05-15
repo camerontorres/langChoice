@@ -1,9 +1,10 @@
 import React from 'react'
+import './Footer.css'
 
 export default function Footer() {
   return (
     
-<div id="footer">
+<div id="footer" className='footerContainer'>
     <div class="container">
         <div class="row">
             <section class="col-3 col-6-narrower col-12-mobilep">
@@ -52,7 +53,14 @@ export default function Footer() {
                     </div>
                 </form>
             </section>
+            <div class="copyright">
+            <ul class="menu">
+                <li>&copy; Moonlight Meadery All rights reserved</li><li>Design: Cameron Torres</li>
+            </ul>
         </div>
+        </div>
+        
+
     </div>
       
     </div>

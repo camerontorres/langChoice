@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import { Button } from './Button'
+//import { Button } from './Button'
 
 
 export default function Navbar() {
@@ -55,7 +55,7 @@ window.addEventListener('resize', showButton)
                 
 
             </ul>
-            {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+            {/*button && <Button buttonStyle='btn--outline'>SIGN UP</Button>*/}
 
         
         </div>
