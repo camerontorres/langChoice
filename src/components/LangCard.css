@@ -1,0 +1,29 @@
+.innerCard{
+    width: 50vw;
+    height: 30em;
+    background-color: rgb(174, 205, 198);
+    padding: 20px;
+    
+}
+
+.langCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div p{
+    padding: none;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 840px) {
+
+    .innerCard {
+        width: 100vw;
+    }
+    .langCard{
+        width: 100vw;
+    }
+
+}

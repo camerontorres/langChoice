@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-//import { Button } from './Button'
+import { Button } from './Button'
 
 
 export default function Navbar() {
 
 const [click, setClick] = useState(false)
-const [button, setButton] = useState(true);
+const [button ,setButton] = useState(true);
 const handleClick =() =>  setClick(!click)
 const closeMobileMenu =() =>  setClick(false)
 

@@ -55,7 +55,7 @@ export default function Footer() {
             </section>
             <div class="copyright">
             <ul class="menu">
-                <li>&copy; Moonlight Meadery All rights reserved</li><li>Design: Cameron Torres</li>
+                <li>&copy; LangChoice All rights reserved</li><li>Design: Cameron Torres</li>
             </ul>
         </div>
         </div>
