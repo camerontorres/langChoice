@@ -28,7 +28,7 @@ export default function LangCard() {
         <div className='langCard' >
             
             <div className='innerCard' key={language.id}>
-            <Link to={`/Languages/${language.name}`} >click here for {language.name}</Link>
+            <Link to={`${language.link}`} >click here for {language.name}</Link>
                 <h1 className='text-center p-0 m-0'>{language.name}</h1>
                 
                 <p  class='text-secondary'style={{paddingRight: 0}}>French is a Romance language spoken 
