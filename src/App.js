@@ -9,7 +9,7 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Languages from './components/pages/Languages'
 import Quiz from './components/pages/Quiz'
-import LangDetail from './components/pages/LangDetail';
+import Pricing from './components/pages/Pricing';
 import Mandarin from './components/pages/languagePages/Mandarin';
 import Spanish from './components/pages/languagePages/Spanish';
 import English from './components/pages/languagePages/English';
@@ -29,8 +29,8 @@ function App() {
               <Route exact path="/About" Component={About}/>
               <Route exact path="/Quiz" Component={Quiz}/>
               <Route exact path="/Languages" Component={Languages}/>
-              {//<Route  exact path="/Languages/:name" Component={LangDetail} />}
-}
+              <Route  exact path="/Pricing" Component={Pricing} />
+
               
               <Route  exact path="/Languages/Mandarin" Component={Mandarin} />
               <Route  exact path="/Languages/Spanish" Component={Spanish} />
