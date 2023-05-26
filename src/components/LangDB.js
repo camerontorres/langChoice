@@ -22,7 +22,7 @@
             apps: ['hello'],
             shorthand:'cn',
             
-            bg:'red',
+            //bg:"../public/images/MandoHeader.jpg",
             images: [],
           
         },

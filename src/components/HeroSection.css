@@ -2,6 +2,7 @@ div h1{
     width: 100%;
     text-align: right;
     padding-right: 3em;
+    color: black;
 
 }
 
@@ -9,9 +10,50 @@ div p{
     text-align: right;
     padding-right: 6em;
     font-size: 1.5em;
+    color: black;
+    
 }
 
 .hero-container{
     height: 70vh;
-    background-color: #C8E9A0;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
+
+
+
+
+
+@media screen and (max-width: 840px) {
+
+    .hero-container{
+     background-position: center bottom;
+     background-size: contain;
+     -webkit-background-size: contain;
+     -moz-background-size: contain;
+     -o-background-size: contain;
+     
+     
+    }
+ 
+ }
+
+ @media screen and (min-width: 841px) {
+
+    .hero-container{
+    height: 90vh;
+     background-position: center bottom;
+     background-size: auto;
+     
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     
+    }
+ 
+ }
+
+ 

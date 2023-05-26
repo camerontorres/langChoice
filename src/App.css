@@ -1,5 +1,10 @@
+
+
 .col-md-6{
   max-width: 50vw;
+}
+.new-line {
+  white-space: pre-line;
 }
 
 .row{
@@ -18,7 +23,7 @@
 }
 
 .headerWrapper{
-  height: 15em;
+  height: 20em;
   
 
 }
@@ -33,6 +38,33 @@
   padding-right: 3em;
   padding-top: 3em;
 }
+
+.MandarinHeader{
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.seperator{
+  
+  border-bottom: 2px solid lightgrey;
+}
+
+.sideImg{
+  max-width: 50vw;
+}
+.homePic{
+  
+  max-width: 50vw;
+  max-height: 50VH;
+}
+
+
+
+
 @media screen and (max-width: 840px) {
 
   .col-md-6{
