@@ -1,11 +1,20 @@
 .footerContainer{
-    background-color: #aad1ff;
+    color: white;
+    
+}
+
+.footerContainer{
+    background-color: rgb(53, 69, 170) ;
     padding-top: 4em;
 }
 
 ul li{
     list-style: none;
 }
- a{ color: #0060B6;
+ a{ color: #ffffff;
     text-decoration: none;
+}
+
+a:hover{
+    color: #FF4D6C;
 }

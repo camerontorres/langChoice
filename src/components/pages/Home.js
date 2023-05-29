@@ -5,7 +5,10 @@ import Footer from '../Footer';
 import TextSection from '../TextSection';
 import vector from '../images/learning2.png'
 import globe from '../images/globe.png'
+import learning from '../images/learning3.png'
 import { isVisible } from '@testing-library/user-event/dist/utils';
+import Emoji from 'react-emoji-render';
+import SignUpBanner from '../SignupBanner';
 
 
 function Home () {
@@ -15,9 +18,10 @@ function Home () {
     const text3=`Our courses are designed to deliver measurable outcomes. We track your progress every step of the way, providing clear milestones and achievements to celebrate your accomplishments. You'll be amazed at how quickly you gain fluency and confidence in your chosen language.\n
     Choose LangChoice, the language learning app that guarantees results. Join thousands of satisfied learners who have unlocked their language potential with our comprehensive courses, intelligent platform, and unwavering commitment to your success. Start your language learning journey today and experience the LangChoice difference.`
     
-    const head1= 'Welcome a New Way to Learn'
-    const head2 ='Explore variety'
-    const head3 = 'Results Guaranteed'
+    const head1= <emoji>Welcome a New Way to Learn 🎓</emoji>
+    const head2 = <emoji>Explore variety ✈️</emoji>
+    const head3 = <emoji>Results Guaranteed ✅</emoji>
+    
 
     
     return (
@@ -26,7 +30,8 @@ function Home () {
             <TextSection id='introText ' text={text1} img={globe} headText={head1}/>
             
             <TextSection   text = {text2} headText={head2} img={vector}/>
-            <TextSection text = {text3} headText={head3} />
+            <TextSection text = {text3} headText={head3}  img={learning} />
+            <SignUpBanner/>
             <Footer/>
             
         </>

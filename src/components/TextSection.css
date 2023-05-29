@@ -1,0 +1,36 @@
+.textWrapper{
+    height: 100%;
+    padding-top: 5em;
+    
+    
+    
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
+
+    background-size: 25%;
+    
+    
+    -webkit-background-size:25%;
+    -moz-background-size:25%;
+    -o-background-size: 25%;
+    background-size: 25%;
+  }
+
+#globe{
+    height: 15em;
+    width: 17em;
+    
+
+}
+
+  .innerWrapper{
+    height: 100fr;
+  }
+  
+
+  .seperator{
+  
+    border-bottom: 2px solid lightgrey;
+  }
+

@@ -3,6 +3,7 @@ import '../../App.css';
 import Footer from '../Footer';
 import LangHeader from '../LangHeader';
 import LangCard from '../LangCard.js';
+import SignUpBanner from '../SignupBanner';
 
 
 
@@ -11,13 +12,17 @@ import LangCard from '../LangCard.js';
 
 function Languages () {
 
-        // Add more languages as needed
+
+    const mainText = 'Browse the Available Languages!'
+    const subText = 'New Languages are always being added!'
+
+       
         
       
 
     return (
         <>
-        <LangHeader/>
+        <LangHeader header={mainText} subtext={subText}/>
         
         <div className='row emptySpace'>
             
@@ -32,6 +37,7 @@ function Languages () {
             </div>
             
         </div>
+        <SignUpBanner/>
         <Footer/>
         </>
     );

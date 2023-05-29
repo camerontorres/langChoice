@@ -3,8 +3,18 @@ import '../App.css'
 import './LangCard.css'
 
 import spokenLanguages from './LangDB'
+import Emoji from 'react-emoji-render'
 
 import { Link } from 'react-router-dom'
+import image1 from './images/ChinaCardCopy.jpg';
+import image2 from './images/SpainCardTrans.jpg';
+import image3 from './images/ParisCardTrans.jpg';
+import image4 from './images/IndiaCardTrans.jpg';
+import image5 from './images/JapanCardTrans.jpg';
+
+
+
+
 
 
 
@@ -25,23 +35,21 @@ export default function LangCard() {
         
         
         
-        <div className='langCard' >
+        <div className='langCard ' >
+        <Link to={`${language.link}` } key={language.id} >
             
-            <div className='innerCard' key={language.id}>
-            <Link to={`${language.link}`} >click here for {language.name}</Link>
-                <h1 className='text-center p-0 m-0'>{language.name}</h1>
+            <div className='innerCard pt-5 bg bg-light'  >
+            
+                <h1 className='text-center p-0 m-0'>{language.name}{language.emoji}</h1>
                 
-                <p  class='text-secondary'style={{paddingRight: 0}}>French is a Romance language spoken 
-                    by millions of people around the world,
-                     especially in France, Canada, and parts 
-                     of Africa. It is known for its elegant sound, 
-                     complex grammar, and rich cultural history, with 
-                     a legacy of literature, art, and philosophy. French
-                      is also an official language of many international 
-                      organizations, including the United Nations, making 
-                      it an important language for diplomacy and global
-                       communication.</p>
+                 
+                
+                <p  className='text-dark text-center'style={{paddingRight: 0}}>
+                    {language.shortDesc}
+                    </p>
+                    
             </div> 
+            </Link>
         </div>
         
         
@@ -52,3 +60,26 @@ export default function LangCard() {
     ) 
 
 }
+
+
+//this goes in the innerCard  style={{ backgroundImage: `url(${getBackgroundImage(language.cardBg)})`}}
+
+//Below code helps get the background images for each card
+/*function getBackgroundImage(cardBg) { 
+    switch (cardBg) {
+      case './images/ChinaCardCopy.jpg':
+        return image1;
+      case './images/SpainCardTrans.jpg':
+        return image2;
+        case './images/ParisCardTrans.jpg':
+        return image3;
+        case './images/IndiaCardTrans.jpg':
+        return image4;
+        case './images/JapanCardTrans.jpg':
+        return image5;
+      // Add other cases for different images
+      default:
+        return null; // Return a default image or null if no matching case is found 
+    } 
+  }
+ */
