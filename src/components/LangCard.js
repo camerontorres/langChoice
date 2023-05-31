@@ -4,13 +4,11 @@ import './LangCard.css'
 
 import spokenLanguages from './LangDB'
 import Emoji from 'react-emoji-render'
+import { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import image1 from './images/ChinaCardCopy.jpg';
-import image2 from './images/SpainCardTrans.jpg';
-import image3 from './images/ParisCardTrans.jpg';
-import image4 from './images/IndiaCardTrans.jpg';
-import image5 from './images/JapanCardTrans.jpg';
+
 
 
 
@@ -24,10 +22,11 @@ import image5 from './images/JapanCardTrans.jpg';
 export default function LangCard() {
     
 
-  
+        
     
     return(
         spokenLanguages.map((language) => (
+            
              
       
             
@@ -35,10 +34,22 @@ export default function LangCard() {
         
         
         
-        <div className='langCard ' >
+        <div className='langCard  zoom-effect' >
         <Link to={`${language.link}` } key={language.id} >
             
-            <div className='innerCard pt-5 bg bg-light'  >
+            <div className='innerCard p-5 bg-light '  onMouseEnter={(e) => { 
+
+                        e.currentTarget.style.background = `linear-gradient(to top, ${language.bg}, #FBFBFB)`;
+                        e.currentTarget.style.backgroundSize = '100% 25%';
+                        e.currentTarget.style.backgroundPosition = 'bottom';
+                        e.currentTarget.style.backgroundRepeat = 'no-repeat'; }} 
+
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.background = '#FBFBFB'; 
+                            e.currentTarget.style.backgroundSize = '100% 50%'; 
+                            e.currentTarget.style.backgroundRepeat = 'repeat'; }} >
+                                    
+      
             
                 <h1 className='text-center p-0 m-0'>{language.name}{language.emoji}</h1>
                 

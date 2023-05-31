@@ -4,6 +4,7 @@
     /**background-color: rgb(255, 255, 255);**/
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
     
     
     padding: 20px;
@@ -31,7 +32,22 @@ div p{
     font-size: 1.1em;
 }
 
-@media screen and (max-width: 840px) {
+
+
+.langCard {
+    overflow: hidden;
+  }
+  
+  .innerCard {
+    
+    transition: transform 0.3s;
+  }
+  
+  .innerCard:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 840px) {
 
     .innerCard {
         width: 100vw;
