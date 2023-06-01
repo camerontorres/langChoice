@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import { Button } from './Button'
+//import { Button } from './Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ window.addEventListener('resize', showButton)
     <div className='navbar'>
         <div className=' nav navbar-container'>
         
-            <Link to='/' className='navbar-logo navbar-brand'>LangChoice <i className='fa fa-heart-o'></i></Link>
+            <Link to='/' className='navbar-logo navbar-brand'>LangChoice<FontAwesomeIcon icon="fa-solid fa-check-double" style={{color: "#ff6251",}} /></Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ?  'fa fa-times' :  'fa fa-bars'}></i>
 

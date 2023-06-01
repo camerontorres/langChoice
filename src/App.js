@@ -12,7 +12,7 @@ import Quiz from './components/pages/Quiz'
 import Pricing from './components/pages/Pricing';
 import Mandarin from './components/pages/languagePages/Mandarin';
 import Spanish from './components/pages/languagePages/Spanish';
-import English from './components/pages/languagePages/English';
+import French from './components/pages/languagePages/English';
 import Hindi from './components/pages/languagePages/Hindi';
 import Japanese from './components/pages/languagePages/Japanese';
 
@@ -34,7 +34,7 @@ function App() {
               
               <Route  exact path="/Languages/Mandarin" Component={Mandarin} />
               <Route  exact path="/Languages/Spanish" Component={Spanish} />
-              <Route  exact path="/Languages/English" Component={English} />
+              <Route  exact path="/Languages/French" Component={French} />
               <Route  exact path="/Languages/Hindi" Component={Hindi} />
 
               <Route  exact path="/Languages/Japanese" Component={Japanese} />

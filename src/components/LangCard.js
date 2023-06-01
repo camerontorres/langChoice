@@ -3,11 +3,10 @@ import '../App.css'
 import './LangCard.css'
 
 import spokenLanguages from './LangDB'
-import Emoji from 'react-emoji-render'
-import { useState } from 'react'
+
 
 import { Link } from 'react-router-dom'
-import image1 from './images/ChinaCardCopy.jpg';
+//import image1 from './images/ChinaCardCopy.jpg';
 
 
 

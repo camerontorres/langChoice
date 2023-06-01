@@ -1,8 +1,10 @@
 import React from 'react'
 import './TextSection.css'
+import { useState } from 'react';
 
 
-export default function TextSection({text, background, img, headText}) {
+export default function TextSection({text, background, img, headText, showImg}) {
+    const [isImageVisible] = useState(showImg);
   return (
     <>
     <div className='wrapperbg bg-light textWrapper pb-3  seperator'style={{backgroundImage: `url(${background})`,}} >
@@ -15,7 +17,7 @@ export default function TextSection({text, background, img, headText}) {
             
         </div>
         <div className='row justify-content-center innerWrapper'>
-                <img id='globe'src={img}/>
+                {isImageVisible && <img id='globe' src={img} />}
         </div>
       
     </div>
@@ -23,3 +25,4 @@ export default function TextSection({text, background, img, headText}) {
     </>
   )
 }
+

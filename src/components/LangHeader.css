@@ -11,7 +11,15 @@ div p{
     font-size: 1.5em;
 }
 
-.hero-container{
+.langHeader{
     height: 50vh;
     background-color: #78b7ff;
+}
+
+@media screen and (max-width: 840px) {
+
+    .langHeader{
+      height: 30vh;
+    }
+
 }

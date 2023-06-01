@@ -1,10 +1,14 @@
-import React, {useState} from 'react';
+import React  from 'react';
 import '../../../App.css'
 
 
-import {  useParams } from 'react-router-dom'
+//import {  useParams } from 'react-router-dom'
 import spokenLanguages from '../../LangDB';
 import Footer from '../../Footer';
+import SpainHeader from '../../images/SpainCard.jpg'
+import greatWall from '../../images/SpainCard.jpg'
+import SignUpBanner from '../../SignupBanner';
+
 
 
 
@@ -13,12 +17,17 @@ const Spanish = () =>{
     const lang = spokenLanguages.find((item) => item.id === '2');
     //const hideElement = lang.param ===null ? 'hidden' : ''
 
-   //Works the accordian
-      const [activeSection, setActiveSection] = useState(null);
+    const introText =`Spanish, also known as Español, is a fascinating and widely spoken language with a rich history. As the official language of Spain and many countries in Latin America, it is spoken by hundreds of millions of people worldwide. Spanish is renowned for its melodic tones and rhythmic cadence, which adds to its beauty and expressiveness.
+
+    Learning Spanish opens up a world of opportunities to connect with a diverse range of people and cultures. With Spanish, you can communicate with native speakers across continents, delve into the vibrant literature of authors like Gabriel García Márquez and Isabel Allende, and explore the rich traditions and customs of Spanish-speaking countries.
     
-      const handleClick = (sectionId) => {
-        setActiveSection((prevSection) => (prevSection === sectionId ? null : sectionId));
-      };
+    Moreover, Spanish is an accessible language for learners. Its phonetic pronunciation and straightforward grammar make it relatively easy to pick up, especially for those already familiar with other Romance languages like French or Italian. Whether you're interested in traveling, career prospects, or simply expanding your cultural horizons, learning Spanish is a valuable and rewarding endeavor that offers both practical and personal benefits.`
+
+    const text1 = ` One of the key features that sets us apart is our intelligent learning algorithm. It adapts to your individual progress, tailoring lessons to your specific needs and skill level. Whether you're a complete beginner or an advanced learner, our app will guide you on a personalized learning journey, ensuring maximum efficiency and effectiveness.\n 
+                            Our curriculum is carefully designed by language experts and native Spanish speakers. It covers all aspects of the language, including vocabulary, grammar, pronunciation, reading, writing, and listening comprehension. With our comprehensive lessons, you'll gain a solid foundation and gradually build your proficiency step by step.\n
+                    To make learning Spanish even more enjoyable, we offer gamified elements and rewards to keep you motivated and engaged. Unlock achievements, compete with friends, and track your progress as you conquer each level. Our app is available across devices, allowing you to learn anytime, anywhere, at your own pace.`
+    const results =`With our language learning app, you can achieve guaranteed results in just 6 months of dedicated use. Our proven methodology, personalized lessons, and interactive exercises ensure efficient and effective language acquisition. By following our carefully designed curriculum, you'll gradually build a strong foundation in vocabulary, grammar, pronunciation, reading, writing, and listening comprehension. Our intelligent learning algorithm adapts to your progress, providing tailored lessons that address your specific needs and skill level. With consistent practice and regular use of our app, you'll witness remarkable progress, confidently communicating in the target language and experiencing the joy of language fluency within just 6 months. Start your language learning journey today and unlock the world of endless possibilities that fluency brings.`
+  
    
 
 
@@ -26,87 +35,46 @@ const Spanish = () =>{
     return (
       <>
       
-      <div className='headerWrapper' style={{backgroundColor: lang.bg}}>
+      <div className='headerWrapper MandarinHeader'  style={{backgroundImage: `url(${SpainHeader})`,}  }>
 
-      <h1 className='text-center p-0 pt-5'>{lang.name}!</h1>
+      <h1 className='text-center p-0 pt-5' >{lang.name}{lang.emoji}</h1>
         
 
       </div>
       <div className='wrapper'>
-        <div className='generalInfo row mb-3'> 
-            <div className='col-sm-4 border border-primary'>
-              <ul className='text-center p-0'>
-                <li>link to section</li>
-                <li>link to section</li>
-                <li>link to section</li>
-                <li>link to section</li>
-                <li>link to section</li>
-                <li>link to section</li>
-              </ul>
-
-            </div>
-            <div className='col-sm-8'>
-              <p>Spoken by {lang.speakers} people in {lang.countries} </p>
-              <p> part of the {lang.languageFamily} language Family</p>
+        <div className='generalInfo seperator row mb-3 '> 
+            
+            <div className='col-md-12 text-center' style={{padding: 0}}>
+              <p className='text-center' style={{padding: 0}}>Spoken by {lang.speakers} people in {lang.countries} and is part of the {lang.languageFamily} language Family</p>
+              <p className='new-line text-start' style={{padding: 0}}>{introText}</p>
             </div>
           </div>
-        <div className='mainText'>
+        <div className='mainText text-center seperator pt-4'>
           
           
-          <p>intro</p>
-          
+          <h2>Our {lang.name} Course </h2>
+
+          <p className='new-line text-start p-0'>
+                {text1}
+          </p>
+
         </div>
+        <div className='mainText text-center pt-5'>
+            <h2> Guarenteed Results</h2>
+            <div className='row p-0'>
+                <div className='col-md-6 p-0 pb-4'>{results}</div>
+                <div className='col-md-6 p-0'><img className='sideImg' src={greatWall} alt='side image'/></div>
 
-
-
-        <div id="accordion" class="p-5">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button className={`btn btn-link ${activeSection === 'collapseOne' ? 'collapsed' : ''}`} data-toggle="collapse"  aria-expanded={activeSection === 'collapseOne'}aria-controls="collapseOne" onClick={() => handleClick('collapseOne')}> {/**** COLLAPSE HEADING */}
-                      History
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse" className={`collapse ${activeSection === 'collapseOne' ? 'show' : ''}`} aria-labelledby="headingOne" data-parent="#accordion">  {/**** COLLAPSE INNER */}
-                  <div class="card-body">
-                    put stuff here
-                  </div>
-                </div>
             </div>
-  <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button className={`btn btn-link ${activeSection === 'collapseTwo' ? 'collapsed' : ''}`} data-toggle="collapse"  aria-expanded={activeSection === 'collapseTwo'} aria-controls="collapseTwo" onClick={() => handleClick('collapseTwo')}>  
-              Grammar
-            </button>
-          </h5>
+
         </div>
-        <div id="collapseTwo"  className={`collapse ${activeSection === 'collapseTwo' ? 'show' : ''}`}aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-          put stuff here
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-      <button className={`btn btn-link ${activeSection === 'collapseThree' ? 'collapsed' : ''}`} data-toggle="collapse"  aria-expanded={activeSection === 'collapseThree'} aria-controls="collapseThree" onClick={() => handleClick('collapseThree')}>
-          Tips
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree"  className={`collapse ${activeSection === 'collapseThree' ? 'show' : ''}`}aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        <ul>
-          put stuff here
-        </ul>
+
+
+
+       
       </div>
-    </div>
-  </div>
-</div>
-      </div>
+      <SignUpBanner/>
+      
 
       <Footer/>
       

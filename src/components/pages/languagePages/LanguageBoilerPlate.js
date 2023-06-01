@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../../../App.css'
 
 
-import {  useParams } from 'react-router-dom'
+//import {  useParams } from 'react-router-dom'
 import spokenLanguages from '../../LangDB';
 import Footer from '../../Footer';
 

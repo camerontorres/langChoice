@@ -45,7 +45,7 @@
           name: "French",
           emoji: <emoji>🇫🇷</emoji>,
           cardBg:'./images/ParisCardTrans.jpg' ,
-          link:'/Languages/English',
+          link:'/Languages/French',
           speakers: "380 million",
           shortDesc:'French is a beautiful and romantic language spoken by millions of people worldwide. It is the official language of France, as well as several other countries in Europe, Africa, and the Americas. French is known for its elegant sound and expressive nature, making it a language of art, culture, and diplomacy. It has a rich literary tradition, with influential works by authors such as Victor Hugo, Molière, and Albert Camus. French cuisine, fashion, and cinema have also gained global acclaim. Learning French opens doors to a diverse range of experiences, from exploring historic landmarks in Paris to engaging in international business and diplomatic affairs.',
           languageFamily: "Indo-European",
