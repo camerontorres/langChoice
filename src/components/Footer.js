@@ -30,7 +30,7 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li className=''>
-                    <Link to='/About'>
+                    <Link to='/SignUp'>
                         about
                     </Link>
                 </li>
@@ -52,7 +52,7 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li className=''>
-                    <Link to='/Languages/English'>
+                    <Link to='/Languages/French'>
                         French
                     </Link>
                 </li>
@@ -85,6 +85,12 @@ export default function Footer() {
                     
                 </ul>  
             </section>
+            <div className='text-center attributions'>
+            <a className='text-center attributions'href="https://www.freepik.com/free-vector/education-learning-concept-love-reading-people-reading-students-studying-preparing-examination-library-book-lovers-readers-modern-literature-flat-cartoon-vector-illustration_25273862.htm#query=studying&position=9&from_view=search&track=sph">Image by jcomp on Freepik </a>-   
+<a className='text-center attributions'href="https://www.freepik.com/free-vector/education-learning-concept-love-reading-people-reading-students-studying-preparing-examination-library-book-lovers-readers-modern-literature-flat-cartoon-vector-illustration_25273862.htm#query=studying&position=9&from_view=search&track=sph">Image by jcomp on Freepik</a>-
+<a className='text-center attributions'href="https://www.vecteezy.com/free-vector/world">World Vectors by Vecteezy</a>-
+<a className='text-center attributions'href="https://www.vecteezy.com/free-vector/memphis-banner">Memphis Banner Vectors by Vecteezy</a>
+            </div>
            
             <div class="copyright text-center">
             <ul class="menu">
