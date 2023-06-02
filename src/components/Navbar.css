@@ -58,10 +58,7 @@
     height: 100%;
   }
   
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
-  }
+  
   
   .fa-bars {
     color: #fff;
@@ -100,16 +97,16 @@
       z-index: 1;
     }
   
-    .nav-links {
+    .nav-link {
       text-align: center;
       padding: 2rem;
       width: 100%;
       display: table;
     }
   
-    .nav-links:hover {
+    .nav-link:hover {
       background-color: #fff;
-      color: #83d630;
+      color: #FF4D6C;
       border-radius: 0;
     }
   
@@ -168,4 +165,11 @@
 .navbar-logo{
     padding-bottom: 1em;
 }
- 
+
+
+.nav-link:hover {
+  /*border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;*/
+  color: #FF4D6C;
+  
+}

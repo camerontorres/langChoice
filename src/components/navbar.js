@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 //import { Button } from './Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Navbar() {
@@ -26,20 +27,20 @@ window.addEventListener('resize', showButton)
     <div className='navbar'>
         <div className=' nav navbar-container'>
         
-            <Link to='/' className='navbar-logo navbar-brand'>LangChoice<FontAwesomeIcon icon="fa-solid fa-check-double" style={{color: "#ff6251",}} /></Link>
+            <Link to='/' className='navbar-logo navbar-brand'>LangChoice <FontAwesomeIcon icon={faCheckDouble} style={{color: "#ff6251",}} /></Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ?  'fa fa-times' :  'fa fa-bars'}></i>
 
             </div>
-            <ul className={click ?  ' nav-menu active' :  ' nav-menu'}>
+            <ul className={click ?  ' nav-menu active p-0' :  ' nav-menu'}>
                 <li className='nav-item nav-link'>
                     <Link to='/' className='nav-link' onClick={closeMobileMenu}>
-                        home
+                        Home
                     </Link>
                 </li>
                 <li className='nav-item nav-link'>
                     <Link to='/Languages' className='nav-link' onClick={closeMobileMenu}>
-                        languages
+                        Languages
                     </Link>
                 </li>
                 <li className='nav-item nav-link'>
@@ -48,8 +49,8 @@ window.addEventListener('resize', showButton)
                     </Link>
                 </li>
                 <li className='nav-item nav-link'>
-                    <Link to='/About' className='nav-link' onClick={closeMobileMenu}>
-                        about
+                    <Link to='/SignUp' className='nav-link' onClick={closeMobileMenu}>
+                        Sign up
                     </Link>
                 </li>
                 

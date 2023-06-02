@@ -5,21 +5,51 @@ div h1{
 
 }
 
+
+
 div p{
     text-align: right;
     padding-right: 6em;
     font-size: 1.5em;
 }
 
+
+
+
+
+.langHeadText{
+color:#ee5a73;
+font-weight: 700;
+background-color: #20095f;
+width: 100%;
+}
+
+.langHeadSub{
+    color: #20095f;
+    padding-right: 5em;
+
+}
+.headerBox{
+    width: 40em;
+    padding-right: 5em;
+}
+
 .langHeader{
     height: 50vh;
-    background-color: #78b7ff;
+    /*background-color: #78b7ff;*/
+    background-size: cover;
+    
 }
 
 @media screen and (max-width: 840px) {
 
     .langHeader{
       height: 30vh;
+    }
+    .headerBox{
+        width: 30em;
+        
+        
     }
 
 }

@@ -22,11 +22,11 @@
     );
 }
 .btn--outline {
-    background-color: transparent;
-    color: white;
+    background-color: #FF4D6C;
+    color: rgb(255, 255, 255);
     padding: 8px 20px;
     border: 1px solid var(
-        --primary
+        rgb(53, 69, 170)
     );
     transition: all 0.3s ease-out;
 }
@@ -42,8 +42,10 @@
 }
 
 .btn--medium:hover, .btn--large:hover{
-    background: white;
-    color: black;
+    background: rgb(53, 69, 170);
+    color: white;
+   
     transition: all 0.3s ease-out;
+
 
 }

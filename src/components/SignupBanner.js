@@ -15,7 +15,7 @@ export default function SignUpBanner(background) {
                 <h1 className='text-center p-0 text-light'>What are you waiting for? </h1>
             </div>
             <div className='text-center pb-5'>
-            <Button to='/Quiz' className='btns' buttonStyle='btn--outline' buttonSize='btn--large' > Click here to sign up!</Button>
+            <Button to='/SignUp' className='btns' buttonStyle='btn--outline' buttonSize='btn--large' > Click here to sign up!</Button>
             </div>
 
             

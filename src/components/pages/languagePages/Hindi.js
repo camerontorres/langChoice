@@ -5,7 +5,7 @@ import '../../../App.css'
 //import {  useParams } from 'react-router-dom'
 import spokenLanguages from '../../LangDB';
 import Footer from '../../Footer';
-import HeaderImg from '../../images/IndiaCard.jpg'
+import HeaderImg from '../../images/HindiBanner.jpg'
 import longImg from '../../images/IndiaCard.jpg'
 import SignUpBanner from '../../SignupBanner';
 
@@ -40,7 +40,7 @@ const Hindi = () =>{
       
       <div className='headerWrapper MandarinHeader'  style={{backgroundImage: `url(${HeaderImg})`,}}>
 
-      <h1 className='text-center p-0 pt-5' >{lang.name}{lang.emoji}</h1>
+      <h1 className='text-center p-0 pt-5 langName' >{lang.name}{lang.emoji}</h1>
         
 
       </div>

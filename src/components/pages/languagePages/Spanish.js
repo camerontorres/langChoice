@@ -37,7 +37,7 @@ const Spanish = () =>{
       
       <div className='headerWrapper MandarinHeader'  style={{backgroundImage: `url(${SpainHeader})`,}  }>
 
-      <h1 className='text-center p-0 pt-5' >{lang.name}{lang.emoji}</h1>
+      <h1 className='text-center p-0 pt-5 langName' >{lang.name}{lang.emoji}</h1>
         
 
       </div>

@@ -1,12 +1,12 @@
-
+import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes ,Route } from 'react-router-dom';
+import  { BrowserRouter, Routes ,Route, useLocation } from 'react-router-dom';
 
 
 
 import Navbar from './components/navbar';
 import Home from './components/pages/Home'
-import About from './components/pages/About'
+import SignUp from './components/pages/About'
 import Languages from './components/pages/Languages'
 import Quiz from './components/pages/Quiz'
 import Pricing from './components/pages/Pricing';
@@ -16,6 +16,15 @@ import French from './components/pages/languagePages/English';
 import Hindi from './components/pages/languagePages/Hindi';
 import Japanese from './components/pages/languagePages/Japanese';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 
 
@@ -24,9 +33,11 @@ function App() {
     <>
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
           <Routes>
+          
               <Route exact path="/" Component={Home}/>
-              <Route exact path="/About" Component={About}/>
+              <Route exact path="/SignUp" Component={SignUp}/>
               <Route exact path="/Quiz" Component={Quiz}/>
               <Route exact path="/Languages" Component={Languages}/>
               <Route  exact path="/Pricing" Component={Pricing} />
