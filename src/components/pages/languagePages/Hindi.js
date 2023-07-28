@@ -49,7 +49,7 @@ const Hindi = () =>{
             
             <div className='col-md-12 text-center' style={{padding: 0}}>
               <p className='text-center' style={{padding: 0}}>Spoken by {lang.speakers} people in {lang.countries} and is part of the {lang.languageFamily} language Family</p>
-              <p className='new-line text-start' style={{padding: 0}}>{introText}</p>
+              <p className='new-line text-center' style={{padding: 0}}>{introText}</p>
             </div>
           </div>
         <div className='mainText text-center seperator pt-4'>
@@ -57,7 +57,7 @@ const Hindi = () =>{
           
           <h2>Our {lang.name} Course </h2>
 
-          <p className='new-line text-start p-0'>
+          <p className='new-line text-center p-0'>
                 {text1}
           </p>
 

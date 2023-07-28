@@ -17,11 +17,9 @@ const Spanish = () =>{
     const lang = spokenLanguages.find((item) => item.id === '2');
     //const hideElement = lang.param ===null ? 'hidden' : ''
 
-    const introText =`Spanish, also known as Español, is a fascinating and widely spoken language with a rich history. As the official language of Spain and many countries in Latin America, it is spoken by hundreds of millions of people worldwide. Spanish is renowned for its melodic tones and rhythmic cadence, which adds to its beauty and expressiveness.
+    const introText =`Spanish is a fascinating and widely spoken language with a rich history. As the official language of Spain and many countries in Latin America, it is spoken by hundreds of millions of people worldwide. Spanish is renowned for its melodic tones and rhythmic cadence, which adds to its beauty and expressiveness.
 
-    Learning Spanish opens up a world of opportunities to connect with a diverse range of people and cultures. With Spanish, you can communicate with native speakers across continents, delve into the vibrant literature of authors like Gabriel García Márquez and Isabel Allende, and explore the rich traditions and customs of Spanish-speaking countries.
-    
-    Moreover, Spanish is an accessible language for learners. Its phonetic pronunciation and straightforward grammar make it relatively easy to pick up, especially for those already familiar with other Romance languages like French or Italian. Whether you're interested in traveling, career prospects, or simply expanding your cultural horizons, learning Spanish is a valuable and rewarding endeavor that offers both practical and personal benefits.`
+    Learning Spanish opens up a world of opportunities to connect with a diverse range of people and cultures. With Spanish, you can communicate with native speakers across continents, delve into the vibrant literature of authors like Gabriel García Márquez and Isabel Allende, and explore the rich traditions and customs of Spanish-speaking countries. Moreover, Spanish is an accessible language for learners. Its phonetic pronunciation and straightforward grammar make it relatively easy to pick up, especially for those already familiar with other Romance languages like French or Italian. Whether you're interested in traveling, career prospects, or simply expanding your cultural horizons, learning Spanish is a valuable and rewarding endeavor that offers both practical and personal benefits.`
 
     const text1 = ` One of the key features that sets us apart is our intelligent learning algorithm. It adapts to your individual progress, tailoring lessons to your specific needs and skill level. Whether you're a complete beginner or an advanced learner, our app will guide you on a personalized learning journey, ensuring maximum efficiency and effectiveness.\n 
                             Our curriculum is carefully designed by language experts and native Spanish speakers. It covers all aspects of the language, including vocabulary, grammar, pronunciation, reading, writing, and listening comprehension. With our comprehensive lessons, you'll gain a solid foundation and gradually build your proficiency step by step.\n
@@ -46,7 +44,7 @@ const Spanish = () =>{
             
             <div className='col-md-12 text-center' style={{padding: 0}}>
               <p className='text-center' style={{padding: 0}}>Spoken by {lang.speakers} people in {lang.countries} and is part of the {lang.languageFamily} language Family</p>
-              <p className='new-line text-start' style={{padding: 0}}>{introText}</p>
+              <p className='new-line text-center' style={{padding: 0}}>{introText}</p>
             </div>
           </div>
         <div className='mainText text-center seperator pt-4'>
@@ -54,7 +52,7 @@ const Spanish = () =>{
           
           <h2>Our {lang.name} Course </h2>
 
-          <p className='new-line text-start p-0'>
+          <p className=' mx-auto text-center p-0'>
                 {text1}
           </p>
 

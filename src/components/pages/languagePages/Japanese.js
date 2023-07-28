@@ -17,7 +17,7 @@ const Japanese = () =>{
     const lang = spokenLanguages.find((item) => item.id === '5');
     //const hideElement = lang.param ===null ? 'hidden' : ''
 
-    const introText =`Japanese, also known as Nihongo, is a captivating and widely spoken language with a rich cultural heritage. As the official language of Japan, it is spoken by millions of people both within the country and across the globe. Japanese is renowned for its intricate writing system, which combines three different scripts: Kanji, Hiragana, and Katakana. This unique feature adds depth and beauty to the language.
+    const introText =`Japanese is a captivating and widely spoken language with a rich cultural heritage. As the official language of Japan, it is spoken by millions of people both within the country and across the globe. Japanese is renowned for its intricate writing system, which combines three different scripts: Kanji, Hiragana, and Katakana. This unique feature adds depth and beauty to the language.
 
     Learning Japanese opens up a gateway to the fascinating world of Japanese culture, from traditional arts like tea ceremonies and calligraphy to modern pop culture phenomena like anime and manga. By mastering Japanese, you can connect with native speakers on a deeper level, appreciate the nuances of Japanese literature and poetry, and gain insight into the rich traditions and customs of this ancient civilization.
     
@@ -47,7 +47,7 @@ const Japanese = () =>{
             
             <div className='col-md-12 text-center' style={{padding: 0}}>
               <p className='text-center' style={{padding: 0}}>Spoken by {lang.speakers} people in {lang.countries} and is part of the {lang.languageFamily} language Family</p>
-              <p className='new-line text-start' style={{padding: 0}}>{introText}</p>
+              <p className='new-line text-center' style={{padding: 0}}>{introText}</p>
             </div>
           </div>
         <div className='mainText text-center seperator pt-4'>
@@ -55,7 +55,7 @@ const Japanese = () =>{
           
           <h2>Our {lang.name} Course </h2>
 
-          <p className='new-line text-start p-0'>
+          <p className='new-line text-center p-0'>
                 {text1}
           </p>
 

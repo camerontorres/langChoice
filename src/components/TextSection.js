@@ -17,7 +17,7 @@ export default function TextSection({text, background, img, headText, showImg}) 
             
         </div>
         <div className='row justify-content-center innerWrapper'>
-                {isImageVisible && <img id='globe' src={img} />}
+                {isImageVisible && <img id='globe' src={img} style={{ height: '60%', width: '60%', maxWidth: '400px' }} />}
         </div>
       
     </div>

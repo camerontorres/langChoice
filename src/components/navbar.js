@@ -27,7 +27,7 @@ window.addEventListener('resize', showButton)
     <div className='navbar'>
         <div className=' nav navbar-container'>
         
-            <Link to='/' className='navbar-logo navbar-brand'>LangChoice <FontAwesomeIcon icon={faCheckDouble} style={{color: "#ff6251",}} /></Link>
+            <Link to='/' className='navbar-logo navbar-brand'>LangChoice  <FontAwesomeIcon icon={faCheckDouble} style={{color: "#ff6251",}} /></Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ?  'fa fa-times' :  'fa fa-bars'}></i>
 

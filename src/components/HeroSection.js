@@ -17,8 +17,8 @@ export default function HeroSection() {
     
 
     <div className='hero-container bgColor bg-white pt-5 pb-5' style={{backgroundImage: `url(${learning})`,}}>
-      <h1 className='text-dark text-right bigText'>Want to learn a languauge?</h1>
-      <p className=' subText'>LangChoice is here to help!</p>
+      <h1 className='text-dark text-right bigText'>Want to learn a language?</h1>
+      <p className=' subText '>LangChoice is here to help!</p>
         <div className='d-flex flex-row justify-content-center pt-5'>
             <div className='hero-btns p-3'>
             

@@ -25,6 +25,7 @@ div p{
 .subText{
     font-weight: 500;
     color: #FF4D6C;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 
@@ -49,34 +50,26 @@ div p{
  }
 
  @media screen and (min-width: 841px) {
-
-    .hero-container{
-    height: 90vh;
-     background-position: center bottom;
-     background-size: auto;
-     
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     
+ .hero-container {
+        height: 90vh;
+        background-position: left; /* Shift the background image to the top left */
+        background-size: auto;
+        
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
-    .subText{
+    .subText {
         size: 100%;
         padding-right: 11em;
         font-size: 1.5em;
-
     }
-    
 
     .bigText {
         font-size: 4em;
-        
     }
- 
- }
-
-
+}
     
  
  

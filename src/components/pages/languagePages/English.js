@@ -17,7 +17,7 @@ const French = () =>{
     const lang = spokenLanguages.find((item) => item.id === '3');
     //const hideElement = lang.param ===null ? 'hidden' : ''
 
-    const introText =`French, also known as Français, is a captivating and widely spoken language with a rich cultural heritage. It is the official language of France and numerous countries worldwide, boasting over 275 million speakers. French is renowned for its elegance, beauty, and romantic allure.
+    const introText =`French is a captivating and widely spoken language with a rich cultural heritage. It is the official language of France and numerous countries worldwide, boasting over 275 million speakers. French is renowned for its elegance, beauty, and romantic allure.
 
     The language's melodious and expressive nature makes it truly unique. Its pronunciation and intonation capture the essence of French culture, creating a captivating flow. French is celebrated for its contributions to the arts, literature, and philosophy, with renowned works by Victor Hugo, Voltaire, and Albert Camus. Learning French immerses you in a world of literature, philosophical ideas, and cinematic tradition.
     
@@ -46,7 +46,7 @@ const French = () =>{
             
             <div className='col-md-12 text-center' style={{padding: 0}}>
               <p className='text-center' style={{padding: 0}}>Spoken by {lang.speakers} people in {lang.countries} and is part of the {lang.languageFamily} language Family</p>
-              <p className='new-line text-start' style={{padding: 0}}>{introText}</p>
+              <p className='new-line text-center' style={{padding: 0}}>{introText}</p>
             </div>
           </div>
         <div className='mainText text-center seperator pt-4'>
@@ -54,7 +54,7 @@ const French = () =>{
           
           <h2>Our {lang.name} Course </h2>
 
-          <p className='new-line text-start p-0'>
+          <p className='new-line text-center p-0'>
                 {text1}
           </p>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css'
+import  {Button}  from '../Button'
 import Footer from '../Footer';
 import LangHeader from '../LangHeader';
 
@@ -50,7 +51,7 @@ export default function SignUp() {
      </div> 
   <div class="form-group row p-0 m-0 mx-auto">
     <div class=" col-10 text-center">
-      <button name="submit" type="submit" class="btn btn-primary text-center">Submit</button>
+      <Button name="submit" buttonStyle='btn--outline' buttonSize='btn--large' type="submit" class="btn  text-center submitBtn">Create Account</Button>
     </div>
   </div>
 </form>
